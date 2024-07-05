@@ -24,7 +24,7 @@ class CompareService {
     {
         return $this->session->set("compare", $compare);
     }
-    public function addToCompare($productId, $count = 1)
+    public function addToCompare($productId)
     {
       
         $compare = $this->getCompare();
@@ -38,7 +38,7 @@ class CompareService {
  
     }
 
-    public function removeToCompare($productId, $count = 1)
+    public function removeToCompare($productId)
     {
         $compare = $this->getCompare();
 
